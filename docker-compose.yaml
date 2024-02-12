@@ -27,7 +27,7 @@ services:
     - catalogue
     - cart
     - user
-    
+
 
   redis:
     image: redis
@@ -47,4 +47,7 @@ services:
     - redis
     - catalogue
 
+  mysql:
+    image: mysql:1
+    container_name: mysql
   
